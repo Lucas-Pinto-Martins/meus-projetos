@@ -1,2 +1,2 @@
 # meus-projetos
- Projetos pessoais, clones, e mais
+ Projetos pessoais, clones e mais.
