@@ -1,0 +1,303 @@
+/*Variáveis*/
+:root {
+    --purple1: #EA087D;
+    --purple2: #CE508E;
+    --blue1: #2098CE;
+    --blue2: #4298C5;
+}
+
+/*Configurações gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&display=swap');
+
+.clear{
+    clear: both;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*Cabeçalho*/
+
+header{
+    width: 100%;
+    background-image: linear-gradient(to right,#4298C5, #EA087D);
+}
+
+h1{
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Rubik Moonrocks';
+}
+
+/*estilizando icone do header*/
+header > img{
+    margin: 1% 0 0 1%;
+    width: 3em;
+    height:3em;
+    position: fixed;
+    box-shadow: 1px 1px 8px 1px #EA087D;
+    z-index: 1;
+}
+
+header > img.icon1:hover{
+    display: none;
+}
+
+/*Estilizando os links do header*/
+.header{
+    text-decoration: none;
+    float: right;
+    margin: 2em 1em 0 0;
+    font-size: 1.25em;
+    font-family: 'Rubik Moonrocks';
+    text-transform: uppercase;
+}
+
+/*Estilizando o main*/
+/*main{
+    background-image: url(https://tm.ibxk.com.br/2019/09/09/09105421328146.jpg?ims=1120x420);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}*/
+
+main{
+    background-image: linear-gradient(to right,black,#EA087D);
+    box-shadow: 20px 20px 20px 20px rgb(255, 255, 255);
+}
+
+
+main h1{
+    padding-top: 0.8em;
+}
+
+.center{
+    box-sizing: content-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.article{
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+}
+
+main img{
+    width: 50%;
+    height: 25em;
+    margin: 1%
+}
+
+.img2{
+    margin-left: 2%;
+    
+}
+
+.p2{
+    margin-left: 2.3%;
+}
+
+main  div  p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    font-size: 1.4em;
+    display: inline-block;
+    vertical-align: top;
+    height: 17.4em;
+    padding: 2%;
+    color: white;
+}
+
+/*footer*/
+.link_footer{ 
+    text-decoration: none;
+}
+
+/*efeito poder galactus*/
+.galactus {
+    width: 30em;
+    height: 95%;
+    position: relative;
+}
+
+.efect{
+    width: 100%;
+    background-color: white;
+    height: 20em;
+}
+
+.planet{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    justify-content: right;
+    bottom: 255px;
+    left: -20px;
+    padding: 0;
+    width: 100vw;
+    margin-top: -50px;
+}
+
+.planet li{
+    width: 60px;
+    height: 60px;
+    background-image: url('https://midias.correiobraziliense.com.br/_midias/png/2022/01/10/675x450/1_crop_p_color2_enhanced_release_small-7311492.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 1;
+    animation: go-back 4s infinite;
+}
+
+@keyframes go-back {
+    0%{
+        transform: translateX(0);
+        width: 300px;
+        height: 300px;
+    }
+    50%{
+        width: 300px;
+        height: 300px;
+    }   
+    80%{
+        
+        width: 110px;
+        height: 300px;
+    }
+    100%{
+        transform: translateX(-900px);
+        width: 0;
+        height: 0;
+    }
+    
+}
+
+/*Efeito no header*/
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 33%;
+    bottom: 680px;
+    animation: animate 1s linear infinite;
+    transform: rotate(45deg);
+}
+
+.container2{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 63%;
+    bottom: 730px;
+    animation: animate 1s linear infinite;
+    transform: rotate(45deg);
+}
+
+span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: rotate 1s linear infinite
+}
+
+span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+span:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    background-color: black;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(900deg);
+    }
+
+    50% {
+        transform: rotate(9deg);
+    }
+
+    90% {
+        transform: rotate(900deg);
+    }
+
+    100% {
+        transform: rotate(9deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        width: 50px;
+        height: 50px;
+    }
+
+    10% {
+        width: 50px;
+        height: 50px;
+    }
+
+    50% {
+        width: 50px;
+        height: 50px;
+    }
+
+    90% {
+        width: 50px;
+        height: 50px;
+    }
+
+    100% {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    box-shadow: 20px 20px 20px 20px rgb(255, 255, 255);
+}
+
+footer img{
+    padding-top: 5px;
+    width: 30%;
+    height: 15em;
+}
+
+footer p{
+    padding-top: 10px;
+    background-color: #4298C5;
+    height: 1.8em;
+    margin: 0;
+}
